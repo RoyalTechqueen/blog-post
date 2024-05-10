@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5px;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 0.3rem;
+    flex-basis: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.card .cont-img {
+    flex-basis: 40%;
+    z-index: 99;
+}
+
+.card .cont-img img {
+    min-width: 100%;
+    margin-bottom: -41px ;
+    height: 200px;
+}
+
+.card .blog .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.card .cont-img h1{
+    text-align: center;
+    color: #fff;
+}
+.card .blog{
+    padding: 2%;
+    flex-basis: 60%;
+    border: 2px solid rgb(118, 170, 118) ;
+    margin-top: -2px;
+}
+.card .blog:hover {
+    border: 2px solid aqua ;
+}
+.card .blog p {
+    text-align: justify;
+    max-height: 70px;
+    margin: 5% 0;  
+    overflow: hidden;  
+}
+
+.card .button{
+    min-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card .blog .button button{
+    background-color: rgb(170, 226, 170);
+    border: none;
+    padding: 2%;
+    border-radius: 0.2rem;
+    position: sticky;
+    bottom: 0;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.button button:hover {
+    background-color: darkgreen;
+    color: #fff;
+    box-shadow: grey 2px 2px, -3px 2px ;
+}
